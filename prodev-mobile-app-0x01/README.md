@@ -1,50 +1,50 @@
-# Welcome to your Expo app 👋
+# React Native Components and Styling
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 📱 Objective
 
-## Get started
+Build a React Native app using the Expo Router template, exploring predefined components (`View`, `Text`) and applying styles using `StyleSheet`.
 
-1. Install dependencies
+## 🧩 Steps Followed
 
+1. **Initialized a new Expo project**  
+   Used the latest Expo Router template:
    ```bash
-   npm install
-   ```
+   npx create-expo-app@latest prodev-mobile-app-0x01 --template with-router
+Reset the application
+Removed any default template content to start with a clean slate:
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
+bash
+Copy
+Edit
 npm run reset-project
-```
+Modified the app/index.tsx file
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Replaced default <Text> content with "Entry Screen - Awesome"
 
-## Learn more
+Applied style={styles.container} to the root <View>
 
-To learn more about developing your project with Expo, look at the following resources:
+Inserted three additional <Text> components with custom styles inside a <View>
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Defined custom styles
+Created a StyleSheet containing styles for:
 
-## Join the community
+container
 
-Join our community of developers creating universal apps.
+largeText
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+mediumText
+
+smallText
+
+🎨 Styling Summary
+container:
+Light blue background, full screen, centered content using Flexbox.
+
+largeText:
+fontSize: 30, bold, red (#f44336), small-caps style.
+
+mediumText:
+fontSize: 20, purple (#9c27b0), right-aligned, semi-bold.
+
+smallText:
+fontSize: 15, blue (#2196f3), centered, regular weight.
